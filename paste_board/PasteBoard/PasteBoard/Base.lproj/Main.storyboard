@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PasteBoard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rvf-4t-FA2">
+                                <rect key="frame" x="0.0" y="46" width="182" height="40"/>
+                                <color key="backgroundColor" red="0.68835678576298931" green="0.59270675584129673" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4Ur-bV-fC4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Copy">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonCopyTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VBE-k7-qXA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIK-UG-Nij">
+                                <rect key="frame" x="193" y="46" width="182" height="40"/>
+                                <color key="backgroundColor" red="0.68835678576298931" green="0.59270675584129673" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Paste">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPasteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fGL-Wf-AxP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W41-ew-XW5">
+                                <rect key="frame" x="0.0" y="111" width="182" height="40"/>
+                                <color key="backgroundColor" red="0.68835678580000004" green="0.59270675579999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eEh-4d-BEi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Image View">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="imageViewButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p3q-Mz-hfQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGy-fc-hAc">
+                                <rect key="frame" x="193" y="111" width="182" height="40"/>
+                                <color key="backgroundColor" red="0.68835678580000004" green="0.59270675579999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="TextView">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="textViewButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Kv-X1-UWw"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JfV-r5-g7N">
+                                <rect key="frame" x="0.0" y="174" width="375" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99694353342056274" green="0.73801403388034481" blue="0.80402562148548018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jib-xl-u7s">
+                                <rect key="frame" x="0.0" y="174" width="375" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.91686535581493034" green="0.9175609851746136" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="W41-ew-XW5" firstAttribute="width" secondItem="ZGy-fc-hAc" secondAttribute="width" id="3Zh-Yi-3a9"/>
+                            <constraint firstItem="Rvf-4t-FA2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BJg-qn-qEP"/>
+                            <constraint firstItem="Rvf-4t-FA2" firstAttribute="width" secondItem="JIK-UG-Nij" secondAttribute="width" id="D2I-Ae-eOz"/>
+                            <constraint firstItem="Rvf-4t-FA2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="46" id="EYr-er-LRl"/>
+                            <constraint firstItem="W41-ew-XW5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="I8j-Zn-jvX"/>
+                            <constraint firstItem="JIK-UG-Nij" firstAttribute="leading" secondItem="Rvf-4t-FA2" secondAttribute="trailing" constant="11" id="UHL-NR-Bpq"/>
+                            <constraint firstItem="Rvf-4t-FA2" firstAttribute="height" secondItem="JIK-UG-Nij" secondAttribute="height" id="Z4n-gO-ZLn"/>
+                            <constraint firstItem="W41-ew-XW5" firstAttribute="top" secondItem="Rvf-4t-FA2" secondAttribute="bottom" constant="25" id="ZEX-gf-h2D"/>
+                            <constraint firstItem="ZGy-fc-hAc" firstAttribute="leading" secondItem="W41-ew-XW5" secondAttribute="trailing" constant="11" id="bkC-Qi-210"/>
+                            <constraint firstItem="JIK-UG-Nij" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cI3-8I-p0c"/>
+                            <constraint firstItem="ZGy-fc-hAc" firstAttribute="top" secondItem="JIK-UG-Nij" secondAttribute="bottom" constant="25" id="iga-NS-PEZ"/>
+                            <constraint firstItem="W41-ew-XW5" firstAttribute="height" secondItem="ZGy-fc-hAc" secondAttribute="height" id="maj-bT-szw"/>
+                            <constraint firstItem="ZGy-fc-hAc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mrs-Jc-3J8"/>
+                            <constraint firstItem="JIK-UG-Nij" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="46" id="sj3-Ap-oVu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewPB" destination="JfV-r5-g7N" id="gaM-zC-9hk"/>
+                        <outlet property="textViewPB" destination="jib-xl-u7s" id="oi6-Pg-rlo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+</document>
